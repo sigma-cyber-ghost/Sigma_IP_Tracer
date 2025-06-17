@@ -17,20 +17,25 @@ pip install requests colorama
 
 Download the Tool
 
-git clone https://github.com/sigma-cyber-ghost/ip-tracer.git
-cd ip-tracer
+git clone https://github.com/sigma-cyber-ghost/Sigma_IP_Tracer.git
+cd /Sigma_IP_Tracer
 
 
 🚀 Usage
 Basic Commands
 Command	Description
-python3 sigma_tracer.py myip	Trace your own IP
-python3 sigma_tracer.py 8.8.8.8	Trace Google's DNS
-python3 sigma_tracer.py google.com	Trace a domain
 
-With Proxy 
+Trace your own IP
+python3 sigma_tracer.py myip	
 
-python3 sigma_tracer.py -p socks5://IP:PORT 192.140.151.70
+Trace Google's DNS/IP/Domain
+python3 sigma_tracer.py google.com
+
+Trace Google's DNS/IP/Domain with proxy
+python3 sigma_tracer.py 8.8.8.8	-p socks5://192.140.151.71:9090 
+
+Trace a target-ip with proxy
+python3 sigma_tracer.py -p socks5://192.140.151.71:9090 192.168.12.12
 
 Supported proxy types: socks5, socks4, http, https
 
